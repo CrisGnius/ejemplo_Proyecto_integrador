@@ -1,16 +1,17 @@
-/* Define CSS Variables (Custom Properties) */
+/* Define CSS Variables (Custom Properties) - PALETA AZUL MARINO - ALTO CONTRASTE */
 :root {
-    --primary-color: #00a3a3;
-    --secondary-color: #e0f2f1;
+    /* Colores base - Azul Marino (Más vivo) */
+    --primary-color: #005A9C;      /* Azul Marino más vibrante */
+    --secondary-color: #eaf4ff;    /* Azul pálido correspondiente */
     --background-color: #f9f9f9;
     --text-color: #333;
     --light-gray: #ddd;
-    --dialogue-assistant: #e0f7fa;
+    --dialogue-assistant: #e6f0ff; /* Azul claro para diálogos */
     --dialogue-user: #f0f0f0;
 
-    /* Dark Mode Colors */
-    --dark-primary-color: #007979; /* Verde azulado oscuro */
-    --dark-secondary-color: #005050;
+    /* Dark Mode Colors - Alto Contraste para Proyectores */
+    --dark-primary-color: #1a6fac;   /* Azul primario más brillante para modo oscuro */
+    --dark-secondary-color: #2a3b4d; /* Superficie más clara para modo oscuro */
     --dark-background-color: #121212;
     --dark-text-color: #eee;
     --dark-light-gray: #444;
@@ -92,7 +93,7 @@ header h1 .book-icon {
 }
 
 .timer-container button:hover {
-    background-color: #b2dfdb;
+    background-color: #d0e5ff; /* Color de hover ajustado para la paleta azul */
 }
 
 .theme-toggle {
@@ -488,7 +489,7 @@ body.dark-mode header {
 }
 
 body.dark-mode .activity-card {
-    background-color: var(--dark-light-gray); 
+    background-color: var(--dark-secondary-color); /* Usamos el secundario para mayor contraste */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -502,7 +503,7 @@ body.dark-mode .step-card {
 }
 
 body.dark-mode .collapsible-content {
-    border-color: var(--dark-text-color); 
+    border-color: var(--dark-light-gray); /* Borde un poco más oscuro que el texto */
 }
 
 body.dark-mode .dialogue.assistant {
@@ -562,12 +563,12 @@ body.dark-mode .timer-container {
 }
 
 body.dark-mode .timer-container button {
-    background-color: var(--secondary-color); 
-    color: var(--text-color);
+    background-color: var(--dark-secondary-color); /* Botón del timer más oscuro */
+    color: var(--dark-text-color);
 }
 
 body.dark-mode .timer-container button:hover {
-    background-color: #b2dfdb;
+    background-color: #3b5066; /* Un poco más claro al hacer hover */
 }
 
 /* Dark Mode para "De un Vistazo" */
@@ -577,7 +578,7 @@ body.dark-mode .overview-subtitle {
 
 body.dark-mode .overview-table-container th,
 body.dark-mode .overview-table-container td {
-    border-color: #ccc; /* LÍNEAS DE TABLA EN MODO OSCURO */
+    border-color: var(--dark-light-gray); /* LÍNEAS DE TABLA EN MODO OSCURO */
 }
 
 body.dark-mode .overview-table-container th {
@@ -586,7 +587,7 @@ body.dark-mode .overview-table-container th {
 }
 
 body.dark-mode .overview-table-container td > strong { 
-    color: #66d9ef; 
+    color: #66d9ef; /* Este cian brillante contrasta bien con el azul marino oscuro */
 }
 
 body.dark-mode .overview-table-container .tactic-highlight strong {
@@ -594,7 +595,7 @@ body.dark-mode .overview-table-container .tactic-highlight strong {
 }
 
 body.dark-mode .overview-table-container a {
-    color: #66d9ef; 
+    color: #66d9ef; /* Este cian brillante contrasta bien con el azul marino oscuro */
 }
 
 
@@ -698,7 +699,7 @@ body.dark-mode .overview-table-container a {
         border-radius: 4px;
     }
     body.dark-mode .overview-table-container tr {
-        border-color: #ccc; /* LÍNEAS DE TABLA (TR) EN MODO OSCURO - VISTA APILADA */
+        border-color: var(--dark-light-gray); /* LÍNEAS DE TABLA (TR) EN MODO OSCURO - VISTA APILADA */
     }
 
 
@@ -710,7 +711,7 @@ body.dark-mode .overview-table-container a {
         text-align: left;
     }
     body.dark-mode .overview-table-container td {
-        border-bottom-color: #555; /* SEPARADOR INTERNO EN MODO OSCURO - VISTA APILADA */
+        border-bottom-color: var(--dark-light-gray); /* SEPARADOR INTERNO EN MODO OSCURO - VISTA APILADA */
     }
 
 
