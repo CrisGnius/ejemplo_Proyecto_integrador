@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">💡</span> <strong>Proyecto Integrador: Sesión 1</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, tácticas y preparación para la sesión de ideación de historias interactivas.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Presentar el desafío de la sesión ("Piranha Tank").</li>
+                                        <li>Fomentar el trabajo en equipo formando "Equipos de Cuentacuentos".</li>
+                                        <li>Generar una idea base para una historia interactiva utilizando la táctica de la "Caja de Ingredientes Mágicos".</li>
+                                        <li>Enriquecer la idea inicial con una sugerencia tecnológica a través de una consulta colectiva al "Oráculo Xolo" (IA).</li>
+                                        <li>Plasmar la idea final en un formato estructurado ("Plan de Historia" T-Bar simplificado) como preparación para la fase de construcción.</li>
+                                    </ul>
+                                    <strong>Secuencia de clase:</strong>
+                                    <ul>
+                                        <li>⚡ <strong class="tactic-highlight">Presentación y Formación de Equipos:</strong> Establecer el contexto del desafío y organizar a los alumnos.</li>
+                                        <li>⚡ <strong class="tactic-highlight">La Caja de Ingredientes Mágicos:</strong> Táctica de ideación aleatoria para impulsar la creatividad inicial.</li>
+                                        <li>⚡ <strong class="tactic-highlight">Consulta al Oráculo Xolo:</strong> Interacción guiada con la IA para añadir un componente tecnológico a la idea.</li>
+                                        <li>⚡ <strong class="tactic-highlight">El Plan de la Historia (T-Bar):</strong> Estructurar y documentar la idea final del equipo.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un "Plan de Historia" (formato T-Bar) por equipo, que incluye un dibujo de la escena principal y una descripción simple de los personajes y la secuencia de eventos, listo para ser implementado en ScratchJr.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Xolo" activo y funcionando.</li>
+                                        <li>Presentación de diapositivas.</li>
+                                        <li>"Caja de Ingredientes Mágicos": Tres bolsas o cajas con tarjetas (Personajes, Acciones, Eventos).</li>
+                                        <li>Hojas de papel o pizarras blancas pequeñas para el "Plan de Historia" (T-Bar).</li>
+                                        <li>Materiales de dibujo (lápices de colores, marcadores).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Asegurar que el dispositivo para proyectar funcione correctamente.</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Xolo" para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                        <li><strong>Materiales:</strong> Preparar las "Cajas de Ingredientes Mágicos" con sus tarjetas y tener listas las hojas para el "Plan de Historia".</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Presentación y Formación de Equipos ⏰ 5 minutos</h2>
+                <p>Presentar el desafío "Piranha Tank" y formar "Equipos de Cuentacuentos" para la misión de hoy.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación y Formación de Equipos ⏰ 5 minutos</h3>
+                            <p>Proyecta la diapositiva 2 "¡El Desafío: Piranha Tank!". Da la bienvenida, presenta el desafío y organiza a los alumnos en "Equipos de Cuentacuentos".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, creadores de historias! ¡Bienvenidos al Piranha Tank de 1er grado! Hoy, su misión es diseñar una historia interactiva que cobre vida usando su imaginación y un poco de magia tecnológica. Para eso, usaremos una receta muy creativa para encontrar nuestra idea. ¡Formen sus 'Equipos de Cuentacuentos'!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: La Caja de Ingredientes Mágicos ⏰ 10 minutos</h2>
+                <p>Utilizar la "Caja de Ingredientes Mágicos" para que cada equipo genere una idea base para su historia interactiva.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Sacar los Ingredientes ⏰ 5 minutos</h3>
+                            <p>Proyecta la diapositiva 3 "La Caja de Ingredientes Mágicos". Explica la dinámica y pasa con las cajas para que cada equipo saque sus tres tarjetas (Personaje, Acción, Evento).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Cuentacuentos, para crear una historia mágica, necesitamos ingredientes secretos! Aquí tengo la 'Caja de Ingredientes Mágicos'. Cada equipo va a tomar un ingrediente de cada una de estas cajas: uno de 'Personajes', uno de 'Acciones' y uno de 'Eventos'.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ideación en Equipo ⏰ 5 minutos</h3>
+                            <p>Da tiempo a los equipos para que discutan y creen una pequeña historia utilizando los tres ingredientes que obtuvieron.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muestren sus ingredientes! Equipo 1, tienen 'Un Dragón', 'Desaparecer' y 'Al Chocar'. ¡Wow! Equipo 2, tienen 'Un Coche', 'Saltar' y 'Al Tocar'. ¡Su misión ahora es inventar una pequeña historia con esos tres ingredientes! Tienen unos minutos para hablar entre ustedes y decidir qué pasará en su cuento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Consulta al Oráculo Xolo ⏰ 15 minutos</h2>
+                <p>Realizar una consulta colectiva al "Oráculo Xolo" para enriquecer la idea de cada equipo con una sugerencia tecnológica para ScratchJr.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Introducción al Oráculo ⏰ 2 minutos</h3>
+                            <p>Proyecta la diapositiva 4 "¡Consulta al Oráculo Xolo!". Presenta a Xolo como un consejero mágico que les dará un poder extra para su historia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Equipos, tienen sus ideas! Pero ahora vamos a consultar al gran 'Oráculo Xolo' para que les dé un consejo mágico que hará su historia aún más increíble. ¡Toda la clase escuchará su sabiduría!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ronda de Consultas ⏰ 13 minutos</h3>
+                            <p>Realiza una ronda de consultas, un equipo a la vez. Ayuda a cada equipo a formular el prompt para Xolo, proyéctalo y lee la respuesta para toda la clase.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Dirigiéndose al primer equipo) "Oráculo Xolo, el equipo 'Dragones de Fuego' tiene estos ingredientes: 'Dragón', 'Desaparecer', 'Al Chocar'. Su idea es que el Dragón vuela y, cuando choca con una nube, desaparece. ¿Qué consejo mágico nos das para hacerlo más emocionante en ScratchJr?"<br><br>(Escribe y proyecta el prompt, luego lee en voz alta la respuesta que genere Xolo. Repite el proceso con cada equipo).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: El Plan de la Historia (T-Bar Simplificado) ⏰ 10 minutos</h2>
+                <p>Guiar a los equipos para que plasmen su idea final, incluyendo el consejo de Xolo, en un "Plan de Historia" utilizando un formato de T-Bar simplificado.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Creación del Plan de Historia ⏰ 10 minutos</h3>
+                            <p>Proyecta la diapositiva 5 "El Plan de la Historia". Instruye a los equipos para que completen su plan en una hoja T-Bar: un dibujo a la izquierda y una descripción simple a la derecha.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Han recibido la sabiduría del Oráculo! Ahora, plasmen su idea final, con el consejo de Xolo incluido, en su 'Plan de Historia'. En el lado izquierdo, hagan un dibujo de la escena principal. En el lado derecho, escriban la descripción. Por ejemplo:<br>
+                                <strong>Personajes:</strong> Dragón, Nube, Tesoro.<br>
+                                <strong>¿Qué pasa?:</strong> El Dragón vuela. Si choca con la Nube, desaparece y aparece un tesoro.<br>
+                                ¡Este será su mapa para construir mañana en ScratchJr!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
